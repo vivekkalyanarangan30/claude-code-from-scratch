@@ -1,0 +1,5 @@
+[
+  {"id": "discount", "description": "total() takes discount as a percentage", "passes": false},
+  {"id": "rounding", "description": "total() rounds to whole cents", "passes": false},
+  {"id": "empty", "description": "receipt([]) returns \"empty cart\"", "passes": false}
+]

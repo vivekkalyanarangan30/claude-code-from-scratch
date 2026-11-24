@@ -1,0 +1,11 @@
+# The course model: qwen3 1.7B, made replayable.
+#   ollama pull qwen3:1.7b && ollama create cc-qwen3 -f Modelfile
+FROM qwen3:1.7b
+# Ollama's default window silently drops the start of long prompts.
+PARAMETER num_ctx 16384
+# Greedy decoding with a fixed seed: the same prompt gives the same reply.
+PARAMETER temperature 0
+PARAMETER top_k 1
+PARAMETER seed 42
+# Caps one reply, thinking included, so a reasoning loop can't run for minutes.
+PARAMETER num_predict 4096

@@ -1,0 +1,6 @@
+{
+  "permissions": {
+    "allow": [],
+    "deny": ["Edit(test_cart.py)", "Write(test_cart.py)"]
+  }
+}

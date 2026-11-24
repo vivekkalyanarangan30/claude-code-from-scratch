@@ -1,0 +1,9 @@
+.venv/
+sandbox/
+__pycache__/
+.pytest_cache/
+*.pptx
+.DS_Store
+sandbox_ralph/
+.qodo/
+.vscode/
